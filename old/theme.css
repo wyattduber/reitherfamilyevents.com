@@ -1,0 +1,117 @@
+/*
+This is a custom muted theme based on Jeremy Noesen's original
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(2.5vh);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #1e1f2f;
+    background-image: linear-gradient(240deg, #2e2f3f, #1a1b28);
+    background-attachment: fixed;
+    font-family: "Nunito", sans-serif;
+    color: #e0e0e0;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: lighter;
+    animation-name: show;
+    animation-duration: 0.2s;
+}
+
+/* Add muted colors to non-button-box links */
+a:link {
+    color: #88bdbc; /* muted teal */
+}
+
+a:visited {
+    color: #b18fcf; /* muted lavender */
+}
+
+/* Disallow colors on button boxes */
+a.button.box {
+    color: inherit;
+}
+
+.grid {
+    display: grid;
+    place-content: center;
+    grid-gap: 16px;
+    margin: 5vw auto;
+    grid-auto-columns: 180px;
+    grid-auto-rows: 180px;
+}
+
+.box {
+    transition: transform 0.2s cubic-bezier(0.5, 0, 0.25, 2), background-color 0.2s, box-shadow 0.2s cubic-bezier(0.5, 0, 0.25, 2);
+    padding: 32px;
+    background-color: #3a3f4b50;
+    box-shadow: 0 12px 12px #00000088;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.box:hover {
+    background-color: #4a4f5b60;
+    transform: scale(1.01);
+    box-shadow: 0 14px 14px #00000077;
+}
+
+.button:hover {
+    background-color: #5a637570;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 16px #00000077;
+}
+
+::-moz-selection {
+    color: #1e1f2f;
+    background: #dde2e8;
+}
+
+::selection {
+    color: #1e1f2f;
+    background: #dde2e8;
+}
+
+@media screen and (max-width: 1080px) {
+    .grid {
+        grid-gap: 2vw;
+        margin: 2.5vw auto;
+        grid-auto-columns: 22vw;
+        grid-auto-rows: 22vw;
+    }
+
+    body {
+        line-height: 3.25vw;
+        font-size: 2.25vw;
+    }
+
+    .box {
+        padding: 4vw;
+        box-shadow: 0 1.5vw 1.5vw #00000088;
+        border-radius: 4vw;
+    }
+
+    .box:hover {
+        box-shadow: 0 1.75vw 1.75vw #00000077;
+    }
+
+    .button:hover {
+        transform: translateY(-0.75vw);
+        box-shadow: 0 2vw 2vw #00000077;
+    }
+}

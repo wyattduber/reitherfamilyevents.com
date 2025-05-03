@@ -1,0 +1,86 @@
+.grid {
+    grid-template-areas:
+        'home projects sites resume'
+        'welcomebox welcomebox github github'
+        'welcomebox welcomebox linkedin email'
+        'aboutme aboutme aboutme aboutme'
+        'aboutme aboutme aboutme aboutme'
+        'creditbox creditbox creditbox creditbox';
+}
+
+.welcomebox {
+    grid-area: welcomebox;
+    text-align: left;
+    justify-content: unset;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.sites {
+    grid-area: sites;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.home {
+    grid-area: home;
+}
+
+.logo {
+    width: 85%;
+}
+
+.github {
+    grid-area: github;
+}
+
+.mastodon {
+    grid-area: mastodon;
+}
+
+.email {
+    grid-area: email;
+}
+
+.github-svg {
+    filter: brightness(0%) invert();
+    width: 20%;
+}
+
+.linkedin-svg {
+    filter: brightness(0%) invert();
+    width: 50%;
+}
+
+.email-svg {
+    filter: brightness(0%) invert();
+    width: 50%;
+}
+
+.aboutme {
+    grid-area: aboutme;
+    text-align: left;
+    justify-content: unset;
+}
+
+.creditbox {
+    grid-area: creditbox;
+    text-align: center;
+    justify-content: unset;
+}
+
+.grid a.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.grid a {
+    margin-bottom: 0px;
+}

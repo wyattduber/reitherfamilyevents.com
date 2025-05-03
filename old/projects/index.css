@@ -1,0 +1,152 @@
+.grid {
+    grid-template-areas:
+            'home projects sites resume'
+            'personal personal personal personal'
+            'thiswebsite thiswebsiteinfo thiswebsiteinfo thiswebsiteinfo'
+            'mcdbridge mcdbridgeinfo mcdbridgeinfo mcdbridgeinfo'
+            'cashapp cashappinfo cashappinfo cashappinfo'
+            'school school school school'
+            'cydaq cydaqinfo cydaqinfo cydaqinfo'
+            'se422x se422xinfo se422xinfo se422xinfo'
+            'cs319 cs319info cs319info cs319info'
+            'cs309 cs309info cs309info cs309info'
+            'cpre288 cpre288info cpre288info cpre288info'
+            'cpre186 cpre186info cpre186info cpre186info';
+}
+
+.home {
+    grid-area: home;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.sites {
+    grid-area: sites;
+}
+
+.personal {
+    grid-area: personal;
+    text-align: left;
+    justify-content: unset;
+}
+
+.thiswebsite {
+    grid-area: thiswebsite;
+}
+
+.thiswebsitelogo {
+    filter: brightness(0%) invert();
+}
+
+.thiswebsiteinfo {
+    grid-area: thiswebsiteinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.myresume {
+    grid-area: myresume;
+}
+
+.myresumeinfo {
+    grid-area: myresumeinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.mcdbridge {
+    grid-area: mcdbridge;
+}
+
+.mcdbridgeinfo {
+    grid-area: mcdbridgeinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.cashapp {
+    grid-area: cashapp;
+}
+
+.cashappinfo {
+    grid-area: cashappinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.school {
+    grid-area: school;
+    text-align: left;
+    justify-content: unset;
+}
+
+.cydaqlogo {
+    width: 100%;
+    align-items: center;
+}
+
+.cydaqinfo {
+    grid-area: cydaqinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.cydaq {
+    grid-area: cydaq;
+}
+
+.se422x {
+    grid-area: se422x;
+}
+
+.se422xinfo {
+    grid-area: se422xinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.cs319 {
+    grid-area: cs319;
+}
+
+.cs319info {
+    grid-area: cs319info;
+    text-align: left;
+    justify-content: unset;
+}
+
+.cs309 {
+    grid-area: cs309;
+}
+
+.cs309info {
+    grid-area: cs309info;
+    text-align: left;
+    justify-content: unset;
+}
+
+.logo {
+    width: 85%;
+}
+
+.icon {
+    width: 85%;
+}
+
+.grid a.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.grid a {
+    margin-bottom: 0px;
+}

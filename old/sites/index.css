@@ -1,0 +1,128 @@
+.grid {
+    grid-template-areas:
+          'home projects sites resume'
+          'siteinfo siteinfo siteinfo siteinfo'
+          'siteinfo siteinfo siteinfo siteinfo'
+          'nextcloud nextcloudinfo nextcloudinfo nextcloudinfo'
+	  'plex plexinfo plexinfo plexinfo'
+          'upptime upptimeinfo upptimeinfo upptimeinfo'
+          'paste pasteinfo pasteinfo pasteinfo'
+          'docs docsinfo docsinfo docsinfo'
+          'amp ampinfo ampinfo ampinfo';
+}
+
+.home {
+    grid-area: home;
+}
+
+.resume {
+    grid-area: resume;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.sites {
+    grid-area: sites;
+}
+
+.siteinfo {
+    grid-area: siteinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.nextcloud {
+    grid-area: nextcloud;
+}
+
+.nextcloudinfo {
+    grid-area: nextcloudinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.plex {
+    grid-area: plex;
+}
+
+.plexinfo {
+    grid-area: plexinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.upptime {
+    grid-area: upptime;
+}
+
+.upptimeinfo {
+    grid-area: upptimeinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.paste {
+    grid-area: paste;
+}
+
+.pasteinfo {
+    grid-area: pasteinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.docs {
+    grid-area: docs;
+}
+
+.docsinfo {
+    grid-area: docsinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.amp {
+    grid-area: amp;
+}
+
+.ampinfo {
+    grid-area: ampinfo;
+    text-align: left;
+    justify-content: unset;
+}
+
+.icon {
+    width: 85%;
+}
+
+/* Ensure the container for the icon and status has a column layout */
+.grid a.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Style the status div */
+.status {
+    margin-top: 10px; /* Add space between the icon and the status */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.status.online {
+    color: green;
+}
+
+.status.offline {
+    color: red;
+}
+
+.grid a {
+    margin-bottom: 0px;
+}
+

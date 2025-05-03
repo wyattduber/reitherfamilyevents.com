@@ -1,2 +1,14 @@
-# reitherfamilyevents.com
-A website to store information about past and future events
+# Website
+
+## About
+
+This is my personal website and portfolio. Click the link in the repository description to view.
+
+## Purpose
+
+I decided to create this website to mainly use as a portfolio, show information about myself, and to dive into new
+territory for my coding abilities.
+
+## Credits
+
+Original Page Design by [Jeremy Noesen](https://github.com/jeremynoesen) 
